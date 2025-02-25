@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="flex flex-col w-full items-center justify-center">
         <Outlet />
       </main>
       <Footer />

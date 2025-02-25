@@ -37,7 +37,7 @@ export function FeatureSection() {
         <div className="mb-12 grid grid-cols-1 gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Features</p>
-            <h2 className="text-5xl font-bold md:text-7xl lg:text-8xl">
+            <h2 className="text-3xl font-bold md:text-4xl lg:text-6xl">
               {featureGridData.sectionTitle}
             </h2>
           </div>

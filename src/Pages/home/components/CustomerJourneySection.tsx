@@ -30,7 +30,7 @@ export function CustomerJourneySection() {
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
               How It Works: The Customer Journey Blueprint
             </h2>
             <p className="md:text-md">
@@ -45,12 +45,13 @@ export function CustomerJourneySection() {
           </div>
         </div>
         <div className="grid place-items-center gap-x-8 gap-y-12 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-[1fr_1.5fr_1fr] lg:gap-x-12">
-          <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
+          <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <InfoCard
               title={journeySteps[0].title}
               description={journeySteps[0].description}
             />
             <InfoCard
+              className="self-end"
               title={journeySteps[1].title}
               description={journeySteps[1].description}
             />
@@ -62,12 +63,13 @@ export function CustomerJourneySection() {
               className="h-auto w-full object-cover"
             />
           </div>
-          <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
+          <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <InfoCard
               title={journeySteps[2].title}
               description={journeySteps[2].description}
             />
             <InfoCard
+              className="self-end"
               title={journeySteps[3].title}
               description={journeySteps[3].description}
             />

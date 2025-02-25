@@ -24,7 +24,7 @@ export function Header({
   containerWidth = "md",
 }: HeaderProps) {
   return (
-    <section id="relume" className={cn("relative px-[5%]", className)}>
+    <section id="relume" className={cn("relative px-[5%] w-full", className)}>
       <div className="container relative z-10">
         <div
           className={cn(
