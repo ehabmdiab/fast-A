@@ -1,9 +1,20 @@
-"use client";
-
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
+import { InfoCard } from "../../../components/InfoCard";
 
-export function Layout201() {
+const assistantFeatures = [
+  {
+    title: "Conversational Coordination",
+    description:
+      "Uses natural language understanding to route tasks, collaborate with other agents, and proactively update stakeholders—maintaining high transparency and efficiency.",
+  },
+  {
+    title: "Intelligent Oversight",
+    description:
+      "Monitors workflow performance in real time, refining processes on the fly to minimize delays and guarantee each engagement delivers measurable value.",
+  },
+];
+
+export const AIAssistantSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -20,7 +31,7 @@ export function Layout201() {
               Meet Adam: Your Prime AI Automation Assistant
             </h2>
             <p className="mb-6 md:mb-8 md:text-md">
-              Adam stands at the forefront of FastAutomate’s hybrid
+              Adam stands at the forefront of FastAutomate's hybrid
               approach—combining Intelligent RPA with Generative Agents to
               coordinate every facet of customer interaction. Through
               conversational engagement, Adam monitors incoming inquiries,
@@ -31,40 +42,14 @@ export function Layout201() {
               for strategic growth.
             </p>
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
-              <div>
-                <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo"
-                  />
-                </div>
-                <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">
-                  Conversational Coordination
-                </h6>
-                <p>
-                  Uses natural language understanding to route tasks,
-                  collaborate with other agents, and proactively update
-                  stakeholders—maintaining high transparency and efficiency.
-                </p>
-              </div>
-              <div>
-                <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo"
-                  />
-                </div>
-                <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">
-                  Intelligent Oversight
-                </h6>
-                <p>
-                  Monitors workflow performance in real time, refining processes
-                  on the fly to minimize delays and guarantee each engagement
-                  delivers measurable value.
-                </p>
-              </div>
+              {assistantFeatures.map((feature, index) => (
+                <InfoCard
+                  key={index}
+                  title={feature.title}
+                  description={feature.description}
+                  className="items-start text-left"
+                />
+              ))}
             </div>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
               <Button title="Ask Adam" variant="secondary">
@@ -76,4 +61,4 @@ export function Layout201() {
       </div>
     </section>
   );
-}
+};

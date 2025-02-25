@@ -1,9 +1,6 @@
-"use client";
-
-import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 
-export function Contact17() {
+export const ContactInfoSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -54,4 +51,4 @@ export function Contact17() {
       </div>
     </section>
   );
-}
+};

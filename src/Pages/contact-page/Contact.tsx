@@ -1,7 +1,6 @@
 import { Header } from "../../components/Header";
-import { Contact17 } from "./components/Contact17";
-import { Contact9 } from "./components/Contact9";
-import { Header50 } from "./components/Header50";
+import { ContactFormSection } from "./components/ContactFormSection";
+import { ContactInfoSection } from "./components/ContactInfoSection";
 
 export default function ContactPage() {
   return (
@@ -13,8 +12,8 @@ export default function ContactPage() {
         containerWidth="lg"
         className="py-16 md:py-24 lg:py-28"
       />
-      <Contact17 />
-      <Contact9 />
+      <ContactInfoSection />
+      <ContactFormSection />
     </div>
   );
 }

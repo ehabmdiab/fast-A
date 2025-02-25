@@ -1,8 +1,4 @@
-"use client";
-
-import React from "react";
-
-export function Layout42() {
+export const MissionSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -27,4 +23,4 @@ export function Layout42() {
       </div>
     </section>
   );
-}
+};

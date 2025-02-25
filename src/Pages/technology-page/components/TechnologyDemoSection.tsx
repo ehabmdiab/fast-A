@@ -1,8 +1,4 @@
-"use client";
-
-import React from "react";
-
-export function Gallery4() {
+export const TechnologyDemoSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -47,4 +43,4 @@ export function Gallery4() {
       </div>
     </section>
   );
-}
+};

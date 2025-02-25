@@ -6,9 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@relume_io/relume-ui";
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 
-export function Content27() {
+export const ArticleContent = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -149,4 +149,4 @@ export function Content27() {
       </div>
     </section>
   );
-}
+};

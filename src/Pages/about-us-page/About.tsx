@@ -1,13 +1,11 @@
 import { Header } from "../../components/Header";
-import { Header50 } from "./components/Header50";
-import { Layout22 } from "./components/Layout22";
-import { Layout42 } from "./components/Layout42";
-import { Team6 } from "./components/Team6";
+import { CompanyJourneySection } from "./components/CompanyJourneySection";
+import { MissionSection } from "./components/MissionSection";
+import { LeadershipTeamSection } from "./components/LeadershipTeamSection";
 
 export default function AboutPage() {
   return (
-    <div>
-      <Header50 />
+    <>
       <Header
         tagline="Innovate"
         title="About FastAutomate"
@@ -20,9 +18,9 @@ export default function AboutPage() {
         containerWidth="lg"
         className="py-16 md:py-24 lg:py-28"
       />
-      <Layout42 />
-      <Layout22 />
-      <Team6 />
-    </div>
+      <MissionSection />
+      <CompanyJourneySection />
+      <LeadershipTeamSection />
+    </>
   );
 }

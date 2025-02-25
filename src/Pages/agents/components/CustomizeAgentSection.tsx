@@ -1,10 +1,6 @@
-"use client";
-
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 
-export function Layout22() {
+export const CustomizeAgentSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -18,26 +14,16 @@ export function Layout22() {
               />
             </div>
             <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Our Journey Towards Intelligent Automation
+              Customize Your AI Agent Effortlessly
             </h2>
             <p className="md:text-md">
-              Founded with the vision of eliminating repetitive tasks and
-              unlocking human potential, our journey began with a passion for
-              innovation. We are committed to making automation accessible to
-              all businesses, empowering them to thrive in a competitive
-              landscape.
+              With our guided setup, you can easily create an AI agent tailored
+              to your unique business requirements. Experience the power of
+              automation that adapts to your workflows.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Learn More" variant="secondary">
-                Learn More
-              </Button>
-              <Button
-                title="Join Us"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-              >
-                Join Us
+              <Button title="Create" variant="secondary">
+                Create
               </Button>
             </div>
           </div>
@@ -52,4 +38,4 @@ export function Layout22() {
       </div>
     </section>
   );
-}
+};

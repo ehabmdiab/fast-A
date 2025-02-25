@@ -1,10 +1,9 @@
 import { Header } from "../../components/Header";
-import { Gallery4 } from "./components/Gallery4";
-import { Header5 } from "./components/Header5";
-import { Layout122 } from "./components/Layout122";
-import { Layout298 } from "./components/Layout298";
-import { Layout303 } from "./components/Layout303";
-import { Team6 } from "./components/Team6";
+import { BusinessResultsSection } from "./components/BusinessResultsSection";
+import { BusinessSegmentsSection } from "./components/BusinessSegmentsSection";
+import { TechnologyBenefitsSection } from "./components/TechnologyBenefitsSection";
+import { TechnologyDemoSection } from "./components/TechnologyDemoSection";
+import { TechnologyFeaturesSection } from "./components/TechnologyFeaturesSection";
 
 export default function TechnologyPage() {
   return (
@@ -22,11 +21,11 @@ export default function TechnologyPage() {
           },
         ]}
       />
-      <Layout122 />
-      <Layout298 />
-      <Gallery4 />
-      <Team6 />
-      <Layout303 />
+      <TechnologyBenefitsSection />
+      <TechnologyFeaturesSection />
+      <TechnologyDemoSection />
+      <BusinessSegmentsSection />
+      <BusinessResultsSection />
     </>
   );
 }

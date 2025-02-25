@@ -1,9 +1,6 @@
-"use client";
-
 import { Button } from "@relume_io/relume-ui";
-import React from "react";
 
-export function Cta13() {
+export const AutomationCallToAction = () => {
   return (
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container grid grid-rows-1 items-start gap-y-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20 lg:gap-y-16">
@@ -28,4 +25,4 @@ export function Cta13() {
       </div>
     </section>
   );
-}
+};

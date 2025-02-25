@@ -1,11 +1,11 @@
-import { Blog1 } from "./components/Blog1";
-import { Cta1 } from "./components/Cta1";
+import { BlogSubscriptionSection } from "./components/BlogSubscriptionSection";
+import { BlogTopicsSection } from "./components/BlogTopicsSection";
 
 export default function BlogPage() {
   return (
     <div>
-      <Blog1 />
-      <Cta1 />
+      <BlogTopicsSection />
+      <BlogSubscriptionSection />
     </div>
   );
 }

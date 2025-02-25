@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,7 +5,6 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@relume_io/relume-ui";
-import React from "react";
 import {
   BiLinkAlt,
   BiLogoFacebookCircle,
@@ -15,7 +12,7 @@ import {
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
-export function BlogPostHeader1() {
+export const ArticleHeader = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -90,4 +87,4 @@ export function BlogPostHeader1() {
       </div>
     </section>
   );
-}
+};

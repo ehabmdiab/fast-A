@@ -1,9 +1,6 @@
-"use client";
-
 import { Button, Checkbox, Input, Label, Textarea } from "@relume_io/relume-ui";
-import React from "react";
 
-export function Contact9() {
+export const ContactFormSection = () => {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
@@ -61,4 +58,4 @@ export function Contact9() {
       </div>
     </section>
   );
-}
+};
