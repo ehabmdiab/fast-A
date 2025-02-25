@@ -1,23 +1,28 @@
-import { Footer4 } from "./components/Footer4";
-import { Header5 } from "./components/Header5";
-import { Layout254 } from "./components/Layout254";
-import { Layout308 } from "./components/Layout308";
-import { Layout4 } from "./components/Layout4";
-import { Navbar1 } from "./components/Navbar1";
-import { Team6 } from "./components/Team6";
-import { Testimonial6 } from "./components/Testimonial6";
+import { Header } from "../../components/Header";
+import { CustomerJourneySection } from "./components/CustomerJourneySection";
+import { FeatureSection } from "./components/FeatureSection";
+import { EfficencySection } from "./components/EfficiencySection";
+import { IndustriesSection } from "./components/IndustriesSection";
+import { TestimonialSection } from "./components/TestimonialSection";
 
 export default function HomePage() {
   return (
-    <div>
-      <Navbar1 />
-      <Header5 />
-      <Layout308 />
-      <Layout4 />
-      <Team6 />
-      <Layout254 />
-      <Testimonial6 />
-      <Footer4 />
-    </div>
+    <>
+      <Header
+        title="Discover the Hybrid AI Edge"
+        description="FastAutomate merges Intelligent RPA with Generative Agents to capture on-screen actions in real time and transform them into adaptive, data-driven workflows. From routine data entry to complex, multi-step processes, our hybrid solution frees your teams to focus on strategic innovation—while simultaneously cutting costs, minimizing errors, and boosting efficiency at every stage of the customer journey."
+        buttons={[
+          {
+            title: "Start a conversation",
+            variant: "secondary-alt",
+          },
+        ]}
+      />
+      <FeatureSection />
+      <EfficencySection />
+      <IndustriesSection />
+      <CustomerJourneySection />
+      <TestimonialSection />
+    </>
   );
 }

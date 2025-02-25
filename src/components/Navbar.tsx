@@ -1,42 +1,8 @@
-"use client";
-
-import { Button, useMediaQuery } from "@relume_io/relume-ui";
+import { Button } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useRelume } from "../hooks/useRelume";
 
-const useRelume = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const isMobile = useMediaQuery("(max-width: 991px)");
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
-  const openOnMobileDropdownMenu = () => {
-    setIsDropdownOpen((prev) => !prev);
-  };
-  const openOnDesktopDropdownMenu = () => {
-    !isMobile && setIsDropdownOpen(true);
-  };
-  const closeOnDesktopDropdownMenu = () => {
-    !isMobile && setIsDropdownOpen(false);
-  };
-  const animateMobileMenu = isMobileMenuOpen ? "open" : "close";
-  const animateMobileMenuButtonSpan = isMobileMenuOpen
-    ? ["open", "rotatePhase"]
-    : "closed";
-  const animateDropdownMenu = isDropdownOpen ? "open" : "close";
-  const animateDropdownMenuIcon = isDropdownOpen ? "rotated" : "initial";
-  return {
-    toggleMobileMenu,
-    openOnDesktopDropdownMenu,
-    closeOnDesktopDropdownMenu,
-    openOnMobileDropdownMenu,
-    animateMobileMenu,
-    animateMobileMenuButtonSpan,
-    animateDropdownMenu,
-    animateDropdownMenuIcon,
-  };
-};
-
-export function Navbar1() {
+export function Navbar() {
   const useActive = useRelume();
   return (
     <section

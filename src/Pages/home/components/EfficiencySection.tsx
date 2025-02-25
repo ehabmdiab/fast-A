@@ -1,7 +1,7 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 
-export function Layout4() {
+export function EfficencySection() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
