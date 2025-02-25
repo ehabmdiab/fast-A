@@ -88,7 +88,7 @@ export const PricingPlansSection = () => {
       <div className="container">
         <div className="mx-auto mb-8 max-w-lg text-center md:mb-10 lg:mb-12">
           <p className="mb-3 font-semibold md:mb-4">Pricing</p>
-          <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+          <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
             Pricing Plans
           </h1>
           <p className="md:text-md">

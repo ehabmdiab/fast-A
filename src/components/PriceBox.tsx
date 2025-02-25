@@ -35,7 +35,7 @@ export function PriceBox({
               <h4 className="mb-2 text-xl font-bold md:text-2xl">{title}</h4>
               <p>{subtitle}</p>
             </div>
-            <h5 className="justify-self-end text-6xl font-bold md:text-9xl lg:text-10xl">
+            <h5 className="justify-self-end text-3xl font-bold md:text-4xl lg:text-6xl">
               {price}
             </h5>
           </div>
@@ -67,7 +67,7 @@ export function PriceBox({
           </h2>
           <p>{subtitle}</p>
           <div className="my-8 h-px w-full shrink-0 bg-border" />
-          <h3 className="my-2 text-6xl font-bold md:text-9xl lg:text-10xl">
+          <h3 className="my-2 text-3xl font-bold md:text-4xl lg:text-6xl">
             {price}
           </h3>
           {saveText && <p className="font-medium">{saveText}</p>}

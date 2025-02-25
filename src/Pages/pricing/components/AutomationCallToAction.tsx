@@ -5,7 +5,7 @@ export const AutomationCallToAction = () => {
     <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container grid grid-rows-1 items-start gap-y-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20 lg:gap-y-16">
         <div>
-          <h1 className="text-5xl font-bold md:text-7xl lg:text-8xl">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-6xl">
             Unlock Your Automation Potential
           </h1>
         </div>

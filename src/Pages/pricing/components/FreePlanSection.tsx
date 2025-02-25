@@ -38,7 +38,7 @@ export function FreePlanSection() {
       <div className="container">
         <div className="mb-8 w-full max-w-lg lg:mb-20">
           <p className="mb-3 font-semibold md:mb-4">Affordable</p>
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+          <h2 className="rb-5 mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
             Experience AI-Powered Automation – Risk-Free & Effortless
           </h2>
           <p className="md:text-md">
