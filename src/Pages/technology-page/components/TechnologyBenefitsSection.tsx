@@ -8,7 +8,7 @@ export const TechnologyBenefitsSection = () => {
         <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:gap-16">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Digital Shadowing</p>
-            <h3 className="mb-5 text-4xl font-bold leading-[1.2] md:mb-6 md:text-5xl lg:text-6xl">
+            <h3 className="mb-5 text-3xl font-bold leading-[1.2] md:mb-6 md:text-4xl lg:text-6xl">
               Intelligent RPA: Crush the Mundane, Elevate Your Focus
             </h3>
             <p className="mt-5 md:mt-6">

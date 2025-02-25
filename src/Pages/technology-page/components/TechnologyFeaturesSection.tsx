@@ -33,7 +33,7 @@ export function TechnologyFeaturesSection() {
           <div className="mx-auto mb-12 max-w-lg md:mb-18 lg:mb-20">
             <div>
               <p className="mb-3 text-center font-semibold md:mb-4">Features</p>
-              <h2 className="mb-5 text-center text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+              <h2 className="mb-5 text-center text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
                 Innovative Features for Seamless Automation
               </h2>
               <p className="text-center md:text-md">
