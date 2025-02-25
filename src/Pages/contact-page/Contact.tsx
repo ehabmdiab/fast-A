@@ -4,7 +4,7 @@ import { ContactInfoSection } from "./components/ContactInfoSection";
 
 export default function ContactPage() {
   return (
-    <div>
+    <>
       <Header
         tagline="Tagline"
         title="Contact FastAutomate"
@@ -14,6 +14,6 @@ export default function ContactPage() {
       />
       <ContactInfoSection />
       <ContactFormSection />
-    </div>
+    </>
   );
 }
