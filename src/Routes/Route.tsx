@@ -1,13 +1,13 @@
 import { RouteObject } from "react-router-dom";
-import HomePage from "../Pages/home/Home";
-import PricingPage from "../Pages/pricing/Pricing";
+import HomePage from "../Pages/Home";
+import PricingPage from "../Pages/Pricing";
 import Layout from "../components/Layout";
-import TechnologyPage from "../Pages/technology-page/Technology";
-import ContactPage from "../Pages/contact-page/Contact";
-import BlogPostPage from "../Pages/blog-post/BlogPost";
-import AboutPage from "../Pages/about-us-page/About";
-import AgentsPage from "../Pages/agents/Agents";
-import BlogPage from "../Pages/blog/Blog";
+import TechnologyPage from "../Pages/Technology";
+import ContactPage from "../Pages/Contact";
+import BlogPostPage from "../Pages/BlogPost";
+import AboutPage from "../Pages/About";
+import AgentsPage from "../Pages/Agents";
+import BlogPage from "../Pages/Blog";
 
 export const routes: RouteObject[] = [
   {
