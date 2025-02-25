@@ -36,7 +36,7 @@ export default function PricingPage() {
       <BasicPlanSection />
       <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
-          <div className="mx-auto w-full max-w-lg">
+          <div className="mx-auto w-full max-w-[700px]">
             <TestimonialCard {...testimonial} variant="centered" />
           </div>
         </div>

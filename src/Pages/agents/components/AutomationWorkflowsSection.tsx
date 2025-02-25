@@ -28,7 +28,7 @@ export function AutomationWorkflowsSection() {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-start">
-          <div className="mx-auto mb-12 max-w-lg md:mb-18 lg:mb-20">
+          <div className="mx-auto mb-12 max-w-[750px] md:mb-18 lg:mb-20">
             <div>
               <p className="mb-3 text-center font-semibold md:mb-4">
                 Explore Our Existing Workflows

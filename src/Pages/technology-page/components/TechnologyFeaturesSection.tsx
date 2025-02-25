@@ -30,7 +30,7 @@ export function TechnologyFeaturesSection() {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-start">
-          <div className="mx-auto mb-12 max-w-lg md:mb-18 lg:mb-20">
+          <div className="mx-auto mb-12 max-w-[660px] md:mb-18 lg:mb-20">
             <div>
               <p className="mb-3 text-center font-semibold md:mb-4">Features</p>
               <h2 className="mb-5 text-center text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">

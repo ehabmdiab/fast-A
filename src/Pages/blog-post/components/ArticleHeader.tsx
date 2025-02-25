@@ -28,7 +28,7 @@ export const ArticleHeader = () => {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="mb-8 text-5xl font-bold md:mb-10 md:text-7xl lg:mb-12 lg:text-8xl">
+          <h1 className="mb-8 text-3xl font-bold md:mb-10 md:text-4xl lg:mb-12 lg:text-6xl">
             Harnessing AI for Business Transformation
           </h1>
           <div className="flex w-full flex-col items-start justify-between sm:flex-row sm:items-end">

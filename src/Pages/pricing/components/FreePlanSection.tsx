@@ -36,7 +36,7 @@ export function FreePlanSection() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
-        <div className="mb-8 w-full max-w-lg lg:mb-20">
+        <div className="mb-8 w-full max-w-[700px] lg:mb-20">
           <p className="mb-3 font-semibold md:mb-4">Affordable</p>
           <h2 className="rb-5 mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
             Experience AI-Powered Automation – Risk-Free & Effortless

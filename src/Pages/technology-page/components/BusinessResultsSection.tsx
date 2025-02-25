@@ -29,7 +29,7 @@ export function BusinessResultsSection() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
-        <div className="mb-12 max-w-lg md:mb-18 lg:mb-20 w-full">
+        <div className="mb-12 max-w-[750px] md:mb-18 lg:mb-20 w-full">
           <h2 className="text-3xl font-bold leading-[1.2] md:text-4xl lg:text-6xl">
             Drive Tangible Results and Stay Future-Ready
           </h2>
