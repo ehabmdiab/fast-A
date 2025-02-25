@@ -27,7 +27,7 @@ export const AIAssistantSection = () => {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
               Meet Adam: Your Prime AI Automation Assistant
             </h2>
             <p className="mb-6 md:mb-8 md:text-md">

@@ -6,7 +6,7 @@ import { DigitalWorkforceSection } from "./components/DigitalWorkforceSection";
 
 export default function AgentsPage() {
   return (
-    <div>
+    <>
       <Header
         title="AI Automation... As Easy as Showing, Not Coding"
         description="Simply record your screen once while performing a task, and the AI will 'shadow' your actions, learning and automating the process."
@@ -21,6 +21,6 @@ export default function AgentsPage() {
       <DigitalWorkforceSection />
       <AutomationWorkflowsSection />
       <CustomizeAgentSection />
-    </div>
+    </>
   );
 }

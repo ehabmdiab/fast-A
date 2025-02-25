@@ -33,7 +33,7 @@ export function AutomationWorkflowsSection() {
               <p className="mb-3 text-center font-semibold md:mb-4">
                 Explore Our Existing Workflows
               </p>
-              <h2 className="mb-5 text-center text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+              <h2 className="mb-5 text-center text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
                 Ready-Made Automations for Every Customer Touchpoint
               </h2>
               <p className="text-center md:text-md">
