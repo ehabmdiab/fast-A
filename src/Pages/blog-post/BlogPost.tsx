@@ -4,10 +4,10 @@ import { BlogCallToAction } from "./components/BlogCallToAction";
 
 export default function BlogPostPage() {
   return (
-    <div>
+    <>
       <ArticleHeader />
       <ArticleContent />
       <BlogCallToAction />
-    </div>
+    </>
   );
 }

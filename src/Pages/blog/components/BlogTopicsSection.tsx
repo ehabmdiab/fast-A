@@ -86,9 +86,9 @@ export const BlogTopicsSection = () => {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
-          <div className="mx-auto w-full max-w-lg text-center">
+          <div className="mx-auto w-full  text-center">
             <p className="mb-3 font-semibold md:mb-4">Blog</p>
-            <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
+            <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
               Explore Our Latest Insights
             </h1>
             <p className="md:text-md">
