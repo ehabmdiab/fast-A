@@ -1,6 +1,7 @@
 import { Button } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import { useRelume } from "../hooks/useRelume";
+import { NavLink } from "react-router";
 
 export function Navbar() {
   const useActive = useRelume();
@@ -11,12 +12,12 @@ export function Navbar() {
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-          <a href="#">
+          <NavLink to="/">
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
               alt="Logo image"
             />
-          </a>
+          </NavLink>
           <button
             className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
             onClick={useActive.toggleMobileMenu}
@@ -71,36 +72,48 @@ export function Navbar() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-          <a
-            href="#"
+          <NavLink
+            to="/technology"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Platform
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            to="/agents"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Agents
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            to="/about"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             About Us
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            to="/contact"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Contact Us
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            to="/blog"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Blog
-          </a>
+          </NavLink>
+          <NavLink
+            to="/blog-post"
+            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+          >
+            Blog posts
+          </NavLink>
+          <NavLink
+            to="/pricing"
+            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+          >
+            pricing
+          </NavLink>
           <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             <Button
               title="Agent Portal"
