@@ -5,7 +5,9 @@ import { Navbar } from "./Navbar";
 const Layout = () => {
   return (
     <>
-      <Navbar />
+      <div className="absolute w-full h-full">
+        <Navbar />
+      </div>
       <main className="flex flex-col w-full items-center justify-center">
         <Outlet />
       </main>

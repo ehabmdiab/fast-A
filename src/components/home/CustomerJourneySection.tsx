@@ -26,57 +26,61 @@ const journeySteps = [
 
 export function CustomerJourneySection() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
-        <div className="mb-12 md:mb-18 lg:mb-20">
-          <div className="mx-auto max-w-lg text-center">
-            <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
-              How It Works: The Customer Journey Blueprint
-            </h2>
-            <p className="md:text-md">
-              Eliminate manual inefficiencies and drive measurable ROI with
-              FastAutomate. Our patent-pending technology leverages a hybrid
-              model—integrating intelligent RPA with advanced generative
-              agents—to enhance every phase of your customer's journey with
-              improved accuracy and real-time responsiveness. Every step is
-              engineered to reduce friction, deliver seamless experiences, and
-              fuel business growth.
-            </p>
+    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+        <div className="container">
+          <div className="mb-12 md:mb-18 lg:mb-20">
+            <div className="mx-auto max-w-lg text-center">
+              <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
+                How It Works: The Customer Journey Blueprint
+              </h2>
+              <p className="md:text-md">
+                Eliminate manual inefficiencies and drive measurable ROI with
+                FastAutomate. Our patent-pending technology leverages a hybrid
+                model—integrating intelligent RPA with advanced generative
+                agents—to enhance every phase of your customer's journey with
+                improved accuracy and real-time responsiveness. Every step is
+                engineered to reduce friction, deliver seamless experiences, and
+                fuel business growth.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="grid place-items-center gap-x-8 gap-y-12 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-[1fr_1.5fr_1fr] lg:gap-x-12">
-          <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
-            <InfoCard
-              title={journeySteps[0].title}
-              description={journeySteps[0].description}
-            />
-            <InfoCard
-              className="self-end"
-              title={journeySteps[1].title}
-              description={journeySteps[1].description}
-            />
+          <div className="grid place-items-center gap-x-8 gap-y-12 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-[1fr_1.5fr_1fr] lg:gap-x-12">
+            <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
+              <InfoCard
+                title={journeySteps[0].title}
+                description={journeySteps[0].description}
+              />
+              <InfoCard
+                className="self-end"
+                title={journeySteps[1].title}
+                description={journeySteps[1].description}
+              />
+            </div>
+            <div className="relative order-last w-full sm:col-span-2 lg:order-none lg:col-span-1">
+              <img
+                src="customer-blueprint.png"
+                alt="Customer Journey illustration"
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
+              <InfoCard
+                title={journeySteps[2].title}
+                description={journeySteps[2].description}
+              />
+              <InfoCard
+                className="self-end"
+                title={journeySteps[3].title}
+                description={journeySteps[3].description}
+              />
+            </div>
           </div>
-          <div className="relative order-last w-full sm:col-span-2 lg:order-none lg:col-span-1">
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              alt="Customer Journey illustration"
-              className="h-auto w-full object-cover"
-            />
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
+            <Button className="bg-neutral-light-dark " variant="secondary">
+              Request Demo
+            </Button>
           </div>
-          <div className=" h-full grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
-            <InfoCard
-              title={journeySteps[2].title}
-              description={journeySteps[2].description}
-            />
-            <InfoCard
-              className="self-end"
-              title={journeySteps[3].title}
-              description={journeySteps[3].description}
-            />
-          </div>
-        </div>
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
-          <Button variant="secondary">Request Demo</Button>
         </div>
       </div>
     </section>

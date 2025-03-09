@@ -3,95 +3,91 @@ import { RxChevronRight } from "react-icons/rx";
 
 export const DigitalWorkforceSection = () => {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
-        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
-          <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
-            Meet Your Digital Workforce
-          </h1>
-          <p className="md:text-md">
-            Empowering your business with intelligent automation.
-          </p>
-        </div>
-        <div className="grid auto-cols-fr grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
-          <div className="flex flex-col border border-border-primary">
-            <div className="flex w-full flex-col items-center justify-center self-start">
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
-              />
-            </div>
-            <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
-              <div>
-                <p className="mb-2 font-semibold">Innovative</p>
-                <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Introducing Tiara, Your HR Specialist
-                </h2>
-                <p>Automates applicant tracking and interview scheduling.</p>
-              </div>
-              <div className="mt-5 md:mt-6">
-                <Button
-                  title="Learn More"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Learn More
-                </Button>
-              </div>
-            </div>
+    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+        <div className="container">
+          <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
+            <h1 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
+              Meet Your Digital Workforce
+            </h1>
+            <p className="md:text-md">
+              Empowering your business with intelligent automation.
+            </p>
           </div>
-          <div className="flex flex-col border border-border-primary">
-            <div className="flex w-full flex-col items-center justify-center self-start">
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
-              />
-            </div>
-            <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
-              <div>
-                <p className="mb-2 font-semibold">Expert</p>
-                <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Meet Jasmin, Your Data Expert
-                </h2>
-                <p>Handles data validation, migration, and integration.</p>
+          <div className="grid auto-cols-fr grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
+            <div className="flex flex-col border border-border-primary">
+              <div className="flex w-full flex-col items-center justify-center self-start">
+                <img src="/tiara.png" alt="Relume placeholder image 1" />
               </div>
-              <div className="mt-5 md:mt-6">
-                <Button
-                  title="Discover"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Discover
-                </Button>
+              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+                <div>
+                  <p className="mb-2 font-semibold">Innovative</p>
+                  <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+                    Introducing Tiara, Your HR Specialist
+                  </h2>
+                  <p>Automates applicant tracking and interview scheduling.</p>
+                </div>
+                <div className="mt-5 md:mt-6">
+                  <Button
+                    title="Learn More"
+                    variant="link"
+                    size="link"
+                    className="bg-neutral-800"
+                    iconRight={<RxChevronRight />}
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col border border-border-primary">
-            <div className="flex w-full flex-col items-center justify-center self-start">
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
-              />
-            </div>
-            <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
-              <div>
-                <p className="mb-2 font-semibold">Efficient</p>
-                <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Introducing Ramsey, Your Operations Specialist
-                </h2>
-                <p>Optimizes workflow automation and quality control.</p>
+            <div className="flex flex-col border border-border-primary">
+              <div className="flex w-full flex-col items-center justify-center self-start">
+                <img src="/Jasmin.png" alt="Relume placeholder image 1" />
               </div>
-              <div className="mt-5 md:mt-6">
-                <Button
-                  title="Explore"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Explore
-                </Button>
+              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+                <div>
+                  <p className="mb-2 font-semibold">Expert</p>
+                  <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+                    Meet Jasmin, Your Data Expert
+                  </h2>
+                  <p>Handles data validation, migration, and integration.</p>
+                </div>
+                <div className="mt-5 md:mt-6">
+                  <Button
+                    title="Discover"
+                    variant="link"
+                    size="link"
+                    className="bg-neutral-800"
+                    iconRight={<RxChevronRight />}
+                  >
+                    Discover
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col border border-border-primary">
+              <div className="flex w-full flex-col items-center justify-center self-start">
+                <img src="/Ramsey.png" alt="Relume placeholder image 1" />
+              </div>
+              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+                <div>
+                  <p className="mb-2 font-semibold">Efficient</p>
+                  <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+                    Introducing Ramsey, Your Operations Specialist
+                  </h2>
+                  <p>Optimizes workflow automation and quality control.</p>
+                </div>
+                <div className="mt-5 md:mt-6">
+                  <Button
+                    title="Explore"
+                    variant="link"
+                    className="bg-neutral-800"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                  >
+                    Explore
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

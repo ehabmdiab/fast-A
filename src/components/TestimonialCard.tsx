@@ -75,7 +75,11 @@ export function TestimonialCard({
           <>
             <div className="hidden w-px self-stretch bg-black md:block" />
             <div>
-              <img src={companyLogo} alt="Company logo" className="max-h-12" />
+              <img
+                src={companyLogo}
+                alt="Company logo"
+                className="max-h-12 icon-white"
+              />
             </div>
           </>
         )}

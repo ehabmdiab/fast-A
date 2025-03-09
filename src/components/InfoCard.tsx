@@ -29,7 +29,7 @@ export function InfoCard({
       >
         <img
           src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-          className="size-12"
+          className="size-12 icon-white"
           alt="Info icon"
         />
       </div>

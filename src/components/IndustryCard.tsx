@@ -17,7 +17,7 @@ export const IndustryCard = ({
         <img
           src={image}
           alt={`${industry} illustration`}
-          className="aspect-square size-full object-cover"
+          className="aspect-square rounded-3xl size-full object-cover"
         />
       </div>
       <div className="mb-3 md:mb-4">

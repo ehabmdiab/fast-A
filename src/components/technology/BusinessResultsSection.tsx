@@ -27,32 +27,35 @@ const results = [
 
 export function BusinessResultsSection() {
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
-        <div className="mb-12 max-w-[750px] md:mb-18 lg:mb-20 w-full">
-          <h2 className="text-3xl font-bold leading-[1.2] md:text-4xl lg:text-6xl">
-            Drive Tangible Results and Stay Future-Ready
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:grid-cols-4">
-          {results.map((result, index) => (
-            <div key={index}>
-              <InfoCard
-                title={result.title}
-                description={result.description}
-                className="items-start text-left"
-              />
-              <div className="mt-6 md:mt-8">
-                <Button
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Button
-                </Button>
+    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+        <div className="container">
+          <div className="mb-12 max-w-[750px] md:mb-18 lg:mb-20 w-full">
+            <h2 className="text-3xl font-bold leading-[1.2] md:text-4xl lg:text-6xl">
+              Drive Tangible Results and Stay Future-Ready
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:grid-cols-4">
+            {results.map((result, index) => (
+              <div key={index}>
+                <InfoCard
+                  title={result.title}
+                  description={result.description}
+                  className="items-start text-left"
+                />
+                <div className="mt-6 md:mt-8">
+                  <Button
+                    variant="link"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                    className="bg-neutral-800"
+                  >
+                    Button
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

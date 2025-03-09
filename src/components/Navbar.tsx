@@ -8,16 +8,15 @@ export function Navbar() {
   return (
     <section
       id="relume"
-      className="flex w-full items-center bg-background-primary lg:min-h-18 lg:px-[5%]"
+      className="flex w-full z-50 absolute items-center bg-background-primary lg:min-h-18 lg:px-[5%]"
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-          <NavLink to="/">
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
-              alt="Logo image"
-            />
-          </NavLink>
+          <div className="flex z-10 w-full max-w-[200px] items-center justify-center">
+            <NavLink to="/" className="w-full">
+              <img src="/logo.png" className="w-full" alt="Logo image" />
+            </NavLink>
+          </div>
           <button
             className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
             onClick={useActive.toggleMobileMenu}
@@ -74,43 +73,43 @@ export function Navbar() {
         >
           <NavLink
             to="/technology"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 !neutral-lightest text-md neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Platform
           </NavLink>
           <NavLink
             to="/agents"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Agents
           </NavLink>
           <NavLink
             to="/about"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             About Us
           </NavLink>
           <NavLink
             to="/contact"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Contact Us
           </NavLink>
           <NavLink
             to="/blog"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Blog
           </NavLink>
           <NavLink
             to="/blog-post"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Blog posts
           </NavLink>
           <NavLink
             to="/pricing"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             pricing
           </NavLink>
@@ -119,7 +118,7 @@ export function Navbar() {
               title="Agent Portal"
               variant="secondary"
               size="sm"
-              className="w-full"
+              className="w-full bg-black/30 backdrop-blur-sm shadow-xl hover:bg-black/40 transition-all duration-300"
             >
               Agent Portal
             </Button>

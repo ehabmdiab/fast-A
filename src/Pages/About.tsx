@@ -7,6 +7,7 @@ export default function AboutPage() {
   return (
     <>
       <Header
+        image="/about-header.png"
         tagline="Innovate"
         title="About FastAutomate"
         description="We are transforming business automation through cutting-edge AI technology that enhances efficiency and productivity."

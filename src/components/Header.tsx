@@ -4,6 +4,7 @@ import { cn } from "../lib/utils";
 interface ButtonProps {
   title: string;
   variant?: "primary" | "secondary-alt";
+  className?: string;
 }
 
 interface HeaderProps {
@@ -13,6 +14,7 @@ interface HeaderProps {
   buttons?: ButtonProps[];
   className?: string;
   containerWidth?: "md" | "lg";
+  image?: string;
 }
 
 export function Header({
@@ -22,6 +24,7 @@ export function Header({
   buttons = [],
   className,
   containerWidth = "md",
+  image,
 }: HeaderProps) {
   return (
     <section id="relume" className={cn("relative px-[5%] w-full", className)}>
@@ -56,6 +59,7 @@ export function Header({
                     key={index}
                     title={button.title}
                     variant={button.variant}
+                    className={button.className}
                   >
                     {button.title}
                   </Button>
@@ -67,7 +71,10 @@ export function Header({
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src={
+            image ??
+            "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          }
           className="size-full object-cover"
           alt="Relume placeholder image"
         />

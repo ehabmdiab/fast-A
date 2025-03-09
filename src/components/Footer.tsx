@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 items-center justify-center justify-items-center gap-x-[4vw] gap-y-12 pb-12 md:pb-18 lg:grid-cols-[0.25fr_1fr_0.25fr] lg:justify-between lg:gap-y-4 lg:pb-20">
           <a href="#" className="lg:justify-self-start">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/footer-logo.png"
               alt="Logo image"
               className="inline-block"
             />
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col-reverse items-center justify-center justify-items-center pb-4 pt-6 text-sm md:flex-row md:gap-x-6 md:pb-0 md:pt-8">
           <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
-            <p className="mt-8 md:mt-0">
+            <p className="mt-8 text-black md:mt-0">
               © 2024 FastAutomate. All rights reserved.
             </p>
           </ul>

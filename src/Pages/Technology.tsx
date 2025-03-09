@@ -9,6 +9,7 @@ export default function TechnologyPage() {
   return (
     <>
       <Header
+        image="/technology-header.png"
         title="Record Once, Automate Forever with AI-Powered Learning"
         description="Our patent-pending screen recording technology teaches AI agents complex workflows instantly—train them in minutes, automate for life."
         buttons={[

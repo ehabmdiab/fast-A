@@ -6,6 +6,7 @@ export default function ContactPage() {
   return (
     <>
       <Header
+        image="/contact-header.png"
         tagline="Tagline"
         title="Contact FastAutomate"
         description="Our team is ready to assist you in transforming your business with intelligent automation solutions."
