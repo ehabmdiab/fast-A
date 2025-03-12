@@ -5,6 +5,7 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import { NavLink } from "react-router";
 
 export function Footer() {
   return (
@@ -20,23 +21,23 @@ export function Footer() {
           </a>
           <ul className="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start">
             <li className="font-semibold">
-              <a href="#">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="font-semibold">
-              <a href="#">Technology</a>
+              <NavLink to="/technology">Technology</NavLink>
             </li>
             <li className="font-semibold">
-              <a href="#">Agents</a>
+              <NavLink to="/agents">Agents</NavLink>
             </li>
             <li className="font-semibold">
-              <a href="#">About Us</a>
+              <NavLink to="/about">About Us</NavLink>
             </li>
             <li className="font-semibold">
-              <a href="#">Contact Us</a>
+              <NavLink to="/contact">Contact Us</NavLink>
             </li>
-            <li className="font-semibold">
+            {/* <li className="font-semibold">
               <a href="#">Blog</a>
-            </li>
+            </li> */}
           </ul>
           <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end">
             <a href="#">

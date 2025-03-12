@@ -1,24 +1,29 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
+import { Icons } from "../Icons";
 
 const results = [
   {
+    icon: <Icons.insights />,
     title: "Data-Driven Insights",
     description:
       "Real-time analytics illuminate performance across departments, giving leadership the clarity to make informed decisions and quickly pivot where needed.",
   },
   {
+    icon: <Icons.disruption />,
     title: "Minimal Disruption",
     description:
       "FastAutomate integrates seamlessly with existing systems and processes, reducing downtime and ensuring a smooth transition to automated workflows.",
   },
   {
+    icon: <Icons.ecosystem />,
     title: "Open Ecosystem",
     description:
       "Compatibility with CRMs, ERPs, and specialized industry tools reduces complexity—enabling deeper automation, consistent data flow, and a holistic view of operations.",
   },
   {
+    icon: <Icons.support />,
     title: "Dedicated Support",
     description:
       "Our expert team keeps your automations optimized, proactively identifying opportunities for further streamlining and providing swift resolution when issues arise.",
@@ -39,6 +44,7 @@ export function BusinessResultsSection() {
             {results.map((result, index) => (
               <div key={index}>
                 <InfoCard
+                  icon={result.icon}
                   title={result.title}
                   description={result.description}
                   className="items-start text-left"

@@ -1,28 +1,30 @@
+import { Icons } from "../Icons";
+
 const featureGridData = {
   sectionTitle: "Revolutionary Automation at Your Fingertips",
   sectionDescription:
     "Experience the future of automation with our patent-pending Smart Screen Understanding technology. Our AI agents recognize UI elements in real-time, ensuring precise and context-aware automation. Say goodbye to manual tasks and hello to efficiency.",
   features: [
     {
-      icon: "https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg",
+      icon: <Icons.patent />,
       title: "Patent-Pending Smart Screen Understanding",
       description:
         "Unlike traditional RPA, our AI recognizes UI elements in real-time, enabling precise, context-aware automation",
     },
     {
-      icon: "https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg",
+      icon: <Icons.automation />,
       title: "No-Code Automation",
       description:
         "Easily deploy AI agents without coding, making automation accessible to all teams",
     },
     {
-      icon: "https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg",
+      icon: <Icons.advancedai />,
       title: "Advanced AI Capabilities",
       description:
         "Powered by Intelligent Computer Vision, FastAutomate understands and interacts with digital environments intelligently.",
     },
     {
-      icon: "https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg",
+      icon: <Icons.scalable />,
       title: "Cost-Effective & Scalable Solutions",
       description:
         "Reduce deployment costs while achieving quick and seamless automation.",
@@ -50,11 +52,7 @@ export function FeatureSection() {
             {featureGridData.features.map((feature, index) => (
               <div key={index}>
                 <div className="mb-5 md:mb-6">
-                  <img
-                    src={feature.icon}
-                    className="size-12 icon-white"
-                    alt={`${feature.title} icon`}
-                  />
+                  <div className="size-12">{feature.icon}</div>
                 </div>
                 <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                   {feature.title}

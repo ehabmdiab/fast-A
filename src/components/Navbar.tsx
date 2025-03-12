@@ -1,10 +1,11 @@
 import { Button } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import { useRelume } from "../hooks/useRelume";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 
 export function Navbar() {
   const useActive = useRelume();
+  const navigate = useNavigate();
   return (
     <section
       id="relume"
@@ -77,12 +78,7 @@ export function Navbar() {
           >
             Platform
           </NavLink>
-          <NavLink
-            to="/agents"
-            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
-          >
-            Agents
-          </NavLink>
+
           <NavLink
             to="/about"
             className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
@@ -95,29 +91,33 @@ export function Navbar() {
           >
             Contact Us
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/blog"
             className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Blog
-          </NavLink>
-          <NavLink
+          </NavLink> */}
+          {/* <NavLink
             to="/blog-post"
             className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Blog posts
-          </NavLink>
-          <NavLink
+          </NavLink> */}
+          {/* <NavLink
             to="/pricing"
             className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             pricing
-          </NavLink>
+
+          </NavLink> */}
           <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             <Button
               title="Agent Portal"
               variant="secondary"
               size="sm"
+              onClick={() => {
+                navigate("/agents");
+              }}
               className="w-full bg-black/30 backdrop-blur-sm shadow-xl hover:bg-black/40 transition-all duration-300"
             >
               Agent Portal

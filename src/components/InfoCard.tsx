@@ -4,6 +4,7 @@ interface InfoCardProps {
   title: string;
   description: string;
   className?: string;
+  icon?: React.ReactNode;
   variant?: "default" | "inline";
 }
 
@@ -11,6 +12,7 @@ export function InfoCard({
   title,
   description,
   className,
+  icon,
   variant = "default",
 }: InfoCardProps) {
   return (
@@ -27,11 +29,15 @@ export function InfoCard({
           variant === "inline" && "mr-6 flex-none self-start"
         )}
       >
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-          className="size-12 icon-white"
-          alt="Info icon"
-        />
+        {icon ? (
+          <div className="size-12">{icon}</div>
+        ) : (
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+            className="size-12 icon-white"
+            alt="Info icon"
+          />
+        )}
       </div>
       <div>
         <h3

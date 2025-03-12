@@ -1,24 +1,29 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
+import { Icons } from "../Icons";
 
 const features = [
   {
+    icon: <Icons.screencapture />,
     title: "Smart Screen Capture",
     description:
       "Automates data entry and process flows using cutting-edge UI recognition technology.",
   },
   {
+    icon: <Icons.adaptive />,
     title: "Adaptive AI Agents",
     description:
       "AI learns and optimizes workflows autonomously, enhancing productivity over time.",
   },
   {
+    icon: <Icons.automation />,
     title: "No-Code Automation",
     description:
       "Implement automation effortlessly without needing any coding skills or technical expertise.",
   },
   {
+    icon: <Icons.security />,
     title: "Enterprise-Grade Security",
     description:
       "Ensures data protection with compliance, encryption, and robust access control measures.",
@@ -49,6 +54,7 @@ export function TechnologyFeaturesSection() {
               {features.map((feature, index) => (
                 <InfoCard
                   key={index}
+                  icon={feature.icon}
                   title={feature.title}
                   description={feature.description}
                 />

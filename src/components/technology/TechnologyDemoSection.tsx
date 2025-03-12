@@ -1,4 +1,15 @@
+import { useState } from "react";
+import { ImageModal } from "../ImageModal";
+
 export const TechnologyDemoSection = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const images = [
+    "how-it-works-1.png",
+    "how-it-works-2.png",
+    "how-it-works-3.png",
+    "how-it-works-4.png",
+  ];
   return (
     <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
@@ -12,41 +23,28 @@ export const TechnologyDemoSection = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 items-start justify-center gap-6 md:gap-8 min-h-[300px] lg:grid-cols-4">
-            <a href="#" className="h-full">
-              <img
-                src="how-it-works-1.png"
-                // src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 1"
-                className="size-full object-cover"
-              />
-            </a>
-            <a href="#" className="h-full">
-              <img
-                src="how-it-works-2.png"
-                // src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 2"
-                className="size-full object-cover"
-              />
-            </a>
-            <a href="#" className="h-full">
-              <img
-                src="how-it-works-3.png"
-                // src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 3"
-                className="size-full object-cover"
-              />
-            </a>
-            <a href="#" className="h-full">
-              <img
-                src="how-it-works-4.png"
-                // src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-                alt="Relume placeholder image 4"
-                className="size-full object-cover"
-              />
-            </a>
+            {images.map((img, index) => (
+              <div
+                key={index}
+                className="h-full cursor-pointer overflow-hidden rounded-lg"
+                onClick={() => setSelectedImage(img)}
+              >
+                <img
+                  src={img}
+                  alt={`Demo image ${index + 1}`}
+                  className="size-full object-cover hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
+      {selectedImage && (
+        <ImageModal
+          imageSrc={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </section>
   );
 };
