@@ -4,6 +4,15 @@
   div {
     color: #f2f2f2;
   }
+
+  a.hash-link {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  a.hash-link:hover {
+    color: white !important;
+  }
 }
 
 @layer components {

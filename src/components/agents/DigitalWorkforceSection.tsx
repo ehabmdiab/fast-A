@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
+import { HashLinkButton } from "../HashLinkButton";
 
 export const DigitalWorkforceSection = () => {
   return (
@@ -19,7 +20,7 @@ export const DigitalWorkforceSection = () => {
               <div className="flex w-full flex-col items-center justify-center self-start">
                 <img src="/tiara.png" alt="Relume placeholder image 1" />
               </div>
-              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+              <div className="flex flex-1 flex-col  p-6 md:p-8 justify-between">
                 <div>
                   <p className="mb-2 font-semibold">Innovative</p>
                   <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
@@ -28,15 +29,17 @@ export const DigitalWorkforceSection = () => {
                   <p>Automates applicant tracking and interview scheduling.</p>
                 </div>
                 <div className="mt-5 md:mt-6">
-                  <Button
-                    title="Learn More"
-                    variant="link"
-                    size="link"
-                    className="bg-neutral-800"
-                    iconRight={<RxChevronRight />}
-                  >
-                    Learn More
-                  </Button>
+                  <HashLinkButton to="/contact#contact-form" asChild>
+                    <Button
+                      title="Learn More"
+                      variant="link"
+                      size="link"
+                      className="bg-neutral-800"
+                      iconRight={<RxChevronRight />}
+                    >
+                      Learn More
+                    </Button>
+                  </HashLinkButton>
                 </div>
               </div>
             </div>
@@ -44,7 +47,7 @@ export const DigitalWorkforceSection = () => {
               <div className="flex w-full flex-col items-center justify-center self-start">
                 <img src="/Jasmin.png" alt="Relume placeholder image 1" />
               </div>
-              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+              <div className="flex flex-1 flex-col justify-between p-6 md:p-8">
                 <div>
                   <p className="mb-2 font-semibold">Expert</p>
                   <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
@@ -53,15 +56,17 @@ export const DigitalWorkforceSection = () => {
                   <p>Handles data validation, migration, and integration.</p>
                 </div>
                 <div className="mt-5 md:mt-6">
-                  <Button
-                    title="Discover"
-                    variant="link"
-                    size="link"
-                    className="bg-neutral-800"
-                    iconRight={<RxChevronRight />}
-                  >
-                    Discover
-                  </Button>
+                  <HashLinkButton to="/contact#contact-form" asChild>
+                    <Button
+                      title="Discover"
+                      variant="link"
+                      size="link"
+                      className="bg-neutral-800"
+                      iconRight={<RxChevronRight />}
+                    >
+                      Discover
+                    </Button>
+                  </HashLinkButton>
                 </div>
               </div>
             </div>
@@ -69,7 +74,7 @@ export const DigitalWorkforceSection = () => {
               <div className="flex w-full flex-col items-center justify-center self-start">
                 <img src="/Ramsey.png" alt="Relume placeholder image 1" />
               </div>
-              <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
+              <div className="flex flex-1 flex-col justify-between p-6 md:p-8">
                 <div>
                   <p className="mb-2 font-semibold">Efficient</p>
                   <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
@@ -78,15 +83,17 @@ export const DigitalWorkforceSection = () => {
                   <p>Optimizes workflow automation and quality control.</p>
                 </div>
                 <div className="mt-5 md:mt-6">
-                  <Button
-                    title="Explore"
-                    variant="link"
-                    className="bg-neutral-800"
-                    size="link"
-                    iconRight={<RxChevronRight />}
-                  >
-                    Explore
-                  </Button>
+                  <HashLinkButton to="/contact#contact-form" asChild>
+                    <Button
+                      title="Explore"
+                      variant="link"
+                      className="bg-neutral-800"
+                      size="link"
+                      iconRight={<RxChevronRight />}
+                    >
+                      Explore
+                    </Button>
+                  </HashLinkButton>
                 </div>
               </div>
             </div>

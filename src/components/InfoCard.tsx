@@ -29,15 +29,7 @@ export function InfoCard({
           variant === "inline" && "mr-6 flex-none self-start"
         )}
       >
-        {icon ? (
-          <div className="size-12">{icon}</div>
-        ) : (
-          <img
-            src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-            className="size-12 icon-white"
-            alt="Info icon"
-          />
-        )}
+        {icon && <div className="size-12">{icon}</div>}
       </div>
       <div>
         <h3

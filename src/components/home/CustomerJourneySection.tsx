@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { InfoCard } from "../InfoCard";
+import { HashLinkButton } from "../HashLinkButton";
 
 const journeySteps = [
   {
@@ -77,9 +78,11 @@ export function CustomerJourneySection() {
             </div>
           </div>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
-            <Button className="bg-neutral-light-dark " variant="secondary">
-              Request Demo
-            </Button>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button className="bg-neutral-light-dark " variant="secondary">
+                Request Demo
+              </Button>
+            </HashLinkButton>
           </div>
         </div>
       </div>

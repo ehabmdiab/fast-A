@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { InfoCard } from "../InfoCard";
+import { HashLinkButton } from "../HashLinkButton";
 
 const assistantFeatures = [
   {
@@ -53,13 +54,15 @@ export const AIAssistantSection = () => {
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                <Button
-                  title="Ask Adam"
-                  className="bg-neutral-800"
-                  variant="primary"
-                >
-                  Ask Adam
-                </Button>
+                <HashLinkButton to="/contact#contact-form" asChild>
+                  <Button
+                    title="Ask Adam"
+                    className="bg-neutral-800"
+                    variant="primary"
+                  >
+                    Ask Adam
+                  </Button>
+                </HashLinkButton>
               </div>
             </div>
           </div>

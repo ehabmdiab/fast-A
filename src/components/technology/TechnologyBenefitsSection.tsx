@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
+import { HashLinkButton } from "../HashLinkButton";
 
 export const TechnologyBenefitsSection = () => {
   return (
@@ -22,14 +23,16 @@ export const TechnologyBenefitsSection = () => {
                 speed.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                <Button
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                  className="bg-neutral-800"
-                >
-                  Demo
-                </Button>
+                <HashLinkButton to="/contact#contact-form" asChild>
+                  <Button
+                    variant="link"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                    className="bg-neutral-800"
+                  >
+                    Demo
+                  </Button>
+                </HashLinkButton>
               </div>
             </div>
             <div>
@@ -48,14 +51,16 @@ export const TechnologyBenefitsSection = () => {
                 business.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                <Button
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                  className="bg-neutral-800"
-                >
-                  Explore
-                </Button>
+                <HashLinkButton to="/contact#contact-form" asChild>
+                  <Button
+                    variant="link"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                    className="bg-neutral-800"
+                  >
+                    Explore
+                  </Button>
+                </HashLinkButton>{" "}
               </div>
             </div>
           </div>

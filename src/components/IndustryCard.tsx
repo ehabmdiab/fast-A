@@ -2,7 +2,7 @@ interface IndustryCardProps {
   image: string;
   industry: string;
   tagline: string;
-  description: string;
+  description?: string;
 }
 
 export const IndustryCard = ({

@@ -1,6 +1,7 @@
 import { Button } from "@relume_io/relume-ui";
 import { BiCheck } from "react-icons/bi";
 import { cn } from "../lib/utils";
+import { HashLinkButton } from "./HashLinkButton";
 
 interface PriceBoxProps {
   title: string;
@@ -56,9 +57,11 @@ export function PriceBox({
             ))}
           </div>
           <div className="my-8 h-px w-full shrink-0 bg-border" />
-          <Button title="Get started" className="w-full">
-            Get started
-          </Button>
+          <HashLinkButton to="/contact#contact-form" asChild>
+            <Button title="Get started" className="w-full">
+              Get started
+            </Button>
+          </HashLinkButton>
         </>
       ) : (
         <>
@@ -72,9 +75,11 @@ export function PriceBox({
           </h3>
           {saveText && <p className="font-medium">{saveText}</p>}
           <div className="mt-6 md:mt-8">
-            <Button title="Get started" className="w-full">
-              Get started
-            </Button>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button title="Get started" className="w-full">
+                Get started
+              </Button>
+            </HashLinkButton>
           </div>
           <div className="my-8 h-px w-full shrink-0 bg-border" />
           <div className="grid grid-cols-1 gap-y-4 py-2">

@@ -23,7 +23,7 @@ export function Navbar() {
             onClick={useActive.toggleMobileMenu}
           >
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="my-[3px] h-0.5 w-6 bg-white"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: 8, transition: { delay: 0.1 } },
@@ -36,7 +36,7 @@ export function Navbar() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="my-[3px] h-0.5 w-6 bg-white"
               animate={useActive.animateMobileMenu}
               variants={{
                 open: { width: 0, transition: { duration: 0.1 } },
@@ -47,7 +47,7 @@ export function Navbar() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="my-[3px] h-0.5 w-6 bg-white"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: -8, transition: { delay: 0.1 } },
@@ -91,12 +91,12 @@ export function Navbar() {
           >
             Contact Us
           </NavLink>
-          {/* <NavLink
-            to="/blog"
+          <NavLink
+            to="/agents"
             className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
-            Blog
-          </NavLink> */}
+            Agents
+          </NavLink>
           {/* <NavLink
             to="/blog-post"
             className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
@@ -110,7 +110,7 @@ export function Navbar() {
             pricing
 
           </NavLink> */}
-          <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
+          {/* <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             <Button
               title="Agent Portal"
               variant="secondary"
@@ -122,7 +122,7 @@ export function Navbar() {
             >
               Agent Portal
             </Button>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

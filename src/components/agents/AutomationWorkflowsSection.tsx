@@ -1,25 +1,31 @@
 import { Button } from "@relume_io/relume-ui";
 import { InfoCard } from "../InfoCard";
+import { Icons } from "../Icons";
+import { HashLinkButton } from "../HashLinkButton";
 
 const workflows = [
   {
     title: "Lead Generation & Prospect Engagement",
     description: "Quickly capture, qualify, and nurture potential customers.",
+    icon: <Icons.lead />,
   },
   {
     title: "Order Fulfillment & Logistics",
     description:
       "Automate inventory checks, shipping updates, and order tracking.",
+    icon: <Icons.box />,
   },
   {
     title: "Customer Service & Post-Sale Support",
     description:
       "Handle tickets, returns, and ongoing client communication effortlessly.",
+    icon: <Icons.support />,
   },
   {
     title: "Data Maintenance & Continuous Improvement",
     description:
       "Keep your CRM or ERP records accurate and actionable at all times.",
+    icon: <Icons.data />,
   },
 ];
 
@@ -54,18 +60,21 @@ export function AutomationWorkflowsSection() {
                 <InfoCard
                   key={index}
                   title={workflow.title}
+                  icon={workflow.icon}
                   description={workflow.description}
                 />
               ))}
             </div>
             <div className="mt-12 flex w-full flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
-              <Button
-                title="Deploy Your Agent"
-                className="bg-neutral-800"
-                variant="secondary"
-              >
-                Deploy Your Agent
-              </Button>
+              <HashLinkButton to="/contact#contact-form" asChild>
+                <Button
+                  title="Deploy Your Agent"
+                  className="bg-neutral-800"
+                  variant="secondary"
+                >
+                  Deploy Your Agent
+                </Button>
+              </HashLinkButton>
             </div>
           </div>
         </div>

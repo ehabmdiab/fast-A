@@ -9,22 +9,22 @@ import { NavLink } from "react-router";
 
 export function Footer() {
   return (
-    <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20">
+    <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-white">
       <div className="container">
         <div className="grid grid-cols-1 items-center justify-center justify-items-center gap-x-[4vw] gap-y-12 pb-12 md:pb-18 lg:grid-cols-[0.25fr_1fr_0.25fr] lg:justify-between lg:gap-y-4 lg:pb-20">
-          <a href="#" className="lg:justify-self-start">
+          <NavLink to="/" className="lg:justify-self-start">
             <img
               src="/footer-logo.png"
               alt="Logo image"
               className="inline-block"
             />
-          </a>
+          </NavLink>
           <ul className="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start">
             <li className="font-semibold">
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="font-semibold">
-              <NavLink to="/technology">Technology</NavLink>
+              <NavLink to="/technology">Platform</NavLink>
             </li>
             <li className="font-semibold">
               <NavLink to="/agents">Agents</NavLink>

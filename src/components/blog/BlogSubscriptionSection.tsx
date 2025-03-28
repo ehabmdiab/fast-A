@@ -1,4 +1,5 @@
 import { Button } from "@relume_io/relume-ui";
+import { HashLinkButton } from "../HashLinkButton";
 
 export const BlogSubscriptionSection = () => {
   return (
@@ -14,7 +15,9 @@ export const BlogSubscriptionSection = () => {
               automation.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button title="Subscribe">Subscribe</Button>
+              <HashLinkButton to="/contact#contact-form" asChild>
+                <Button title="Subscribe">Subscribe</Button>
+              </HashLinkButton>
             </div>
           </div>
           <div>

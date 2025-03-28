@@ -25,7 +25,7 @@ export default function HomePage() {
       <EfficencySection />
       <IndustriesSection />
       <CustomerJourneySection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
     </>
   );
 }

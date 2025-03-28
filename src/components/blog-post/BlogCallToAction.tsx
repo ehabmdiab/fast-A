@@ -1,4 +1,5 @@
 import { Button } from "@relume_io/relume-ui";
+import { HashLinkButton } from "../HashLinkButton";
 
 export const BlogCallToAction = () => {
   return (
@@ -16,10 +17,14 @@ export const BlogCallToAction = () => {
             </div>
           </div>
           <div className="flex w-full flex-wrap items-center justify-start gap-4 md:w-auto md:justify-end">
-            <Button title="Read">Read</Button>
-            <Button title="Subscribe" variant="secondary">
-              Subscribe
-            </Button>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button title="Read">Read</Button>
+            </HashLinkButton>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button title="Subscribe" variant="secondary">
+                Subscribe
+              </Button>
+            </HashLinkButton>
           </div>
         </div>
       </div>

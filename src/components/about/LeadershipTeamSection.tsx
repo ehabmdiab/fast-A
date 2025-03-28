@@ -4,25 +4,25 @@ import { IndustryCard } from "../IndustryCard";
 
 const teamMembers = [
   {
-    image: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
+    image: "/ahmed-CEO.png",
     industry: "Mr. Ahmed Ramy",
     tagline: "Chief Executive Officer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // description:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
-    image: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
+    image: "/osama-CTO.png",
     industry: "Mr. Ossama Aziz",
     tagline: "Chief Technology Officer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // description:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
-    image: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
+    image: "/adham-CBO.png",
     industry: "Mr. Adham Maghraby",
     tagline: "Chief Business Officer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    // description:
+    //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
 ];
 
@@ -41,7 +41,7 @@ export const LeadershipTeamSection = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="flex flex-col">
                 <IndustryCard {...member} />
-                <div className="mt-6 text-white grid grid-flow-col grid-cols-[max-content] gap-[0.875rem] self-center">
+                {/* <div className="mt-6 text-white grid grid-flow-col grid-cols-[max-content] gap-[0.875rem] self-center">
                   <a href="#">
                     <BiLogoLinkedinSquare className="size-6 text-white" />
                   </a>
@@ -51,7 +51,7 @@ export const LeadershipTeamSection = () => {
                   <a href="#">
                     <BiLogoDribbble className="size-6 text-white" />
                   </a>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

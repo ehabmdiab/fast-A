@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { cn } from "../lib/utils";
+import { HashLinkButton } from "./HashLinkButton";
 
 interface ButtonProps {
   title: string;
@@ -55,14 +56,16 @@ export function Header({
             {buttons.length > 0 && (
               <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
                 {buttons.map((button, index) => (
-                  <Button
-                    key={index}
-                    title={button.title}
-                    variant={button.variant}
-                    className={button.className}
-                  >
-                    {button.title}
-                  </Button>
+                  <HashLinkButton to="/contact#contact-form" asChild>
+                    <Button
+                      key={index}
+                      title={button.title}
+                      variant={button.variant}
+                      className={button.className}
+                    >
+                      {button.title}
+                    </Button>
+                  </HashLinkButton>
                 ))}
               </div>
             )}

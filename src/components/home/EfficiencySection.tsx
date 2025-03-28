@@ -1,5 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
+import { HashLinkButton } from "../HashLinkButton";
 
 export function EfficencySection() {
   return (
@@ -49,14 +50,16 @@ export function EfficencySection() {
                 </div>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-                <Button
-                  title="Get Started"
-                  variant="link"
-                  size="link"
-                  iconRight={<RxChevronRight />}
-                >
-                  Get Started
-                </Button>
+                <HashLinkButton to="/contact#contact-form" asChild>
+                  <Button
+                    title="Get Started"
+                    variant="link"
+                    size="link"
+                    iconRight={<RxChevronRight />}
+                  >
+                    Get Started
+                  </Button>
+                </HashLinkButton>
               </div>
             </div>
             <div className="max-w-[600px] w-full h-full max-h-[600px]">

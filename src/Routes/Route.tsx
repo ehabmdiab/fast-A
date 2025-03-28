@@ -4,10 +4,10 @@ import PricingPage from "../Pages/Pricing";
 import Layout from "../components/Layout";
 import TechnologyPage from "../Pages/Technology";
 import ContactPage from "../Pages/Contact";
-import BlogPostPage from "../Pages/BlogPost";
+// import BlogPostPage from "../Pages/BlogPost";
 import AboutPage from "../Pages/About";
 import AgentsPage from "../Pages/Agents";
-import BlogPage from "../Pages/Blog";
+// import BlogPage from "../Pages/Blog";
 
 export const routes: RouteObject[] = [
   {
@@ -18,10 +18,10 @@ export const routes: RouteObject[] = [
         index: true,
         element: <HomePage />,
       },
-      {
-        path: "pricing",
-        element: <PricingPage />,
-      },
+      // {
+      //   path: "pricing",
+      //   element: <PricingPage />,
+      // },
       {
         path: "technology",
         element: <TechnologyPage />,
@@ -30,14 +30,15 @@ export const routes: RouteObject[] = [
         path: "contact",
         element: <ContactPage />,
       },
-      {
-        path: "blog",
-        element: <BlogPage />,
-      },
-      {
-        path: "blog-post",
-        element: <BlogPostPage />,
-      },
+      // {
+      //   path: "blog",
+      //   element: <BlogPage />,
+      // },
+      // {
+      //   path: "blog-post",
+      //   element: <BlogPostPage />,
+      // },
+
       {
         path: "about",
         element: <AboutPage />,

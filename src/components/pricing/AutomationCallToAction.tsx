@@ -1,4 +1,6 @@
 import { Button } from "@relume_io/relume-ui";
+import { HashLink } from "react-router-hash-link";
+import { HashLinkButton } from "../HashLinkButton";
 
 export const AutomationCallToAction = () => {
   return (
@@ -16,10 +18,14 @@ export const AutomationCallToAction = () => {
             today.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button title="Start Free Trial">Start Free Trial</Button>
-            <Button title="Contact Sales" variant="secondary">
-              Contact Sales
-            </Button>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button title="Start Free Trial">Start Free Trial</Button>
+            </HashLinkButton>
+            <HashLinkButton to="/contact#contact-form" asChild>
+              <Button title="Contact Sales" variant="secondary">
+                Contact Sales
+              </Button>
+            </HashLinkButton>
           </div>
         </div>
       </div>

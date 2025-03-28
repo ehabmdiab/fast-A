@@ -2,6 +2,8 @@ import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
 import { Icons } from "../Icons";
+import { HashLink } from "react-router-hash-link";
+import { HashLinkButton } from "../HashLinkButton";
 
 const features = [
   {
@@ -61,22 +63,26 @@ export function TechnologyFeaturesSection() {
               ))}
             </div>
             <div className="mt-12 flex w-full flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
-              <Button
-                title="Learn More"
-                className="bg-neutral-800"
-                variant="secondary"
-              >
-                Learn More
-              </Button>
-              <Button
-                title="Sign Up"
-                variant="link"
-                size="link"
-                className="bg-neutral-800"
-                iconRight={<RxChevronRight />}
-              >
-                Sign Up
-              </Button>
+              <HashLinkButton to="/contact#contact-form" asChild>
+                <Button
+                  title="Learn More"
+                  className="bg-neutral-800"
+                  variant="secondary"
+                >
+                  Learn More
+                </Button>
+              </HashLinkButton>{" "}
+              <HashLinkButton to="/contact#contact-form" asChild>
+                <Button
+                  title="Sign Up"
+                  variant="link"
+                  size="link"
+                  className="bg-neutral-800"
+                  iconRight={<RxChevronRight />}
+                >
+                  Sign Up
+                </Button>
+              </HashLinkButton>
             </div>
           </div>
         </div>

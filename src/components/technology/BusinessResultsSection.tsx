@@ -49,7 +49,7 @@ export function BusinessResultsSection() {
                   description={result.description}
                   className="items-start text-left"
                 />
-                <div className="mt-6 md:mt-8">
+                {/* <div className="mt-6 md:mt-8">
                   <Button
                     variant="link"
                     size="link"
@@ -58,7 +58,7 @@ export function BusinessResultsSection() {
                   >
                     Button
                   </Button>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
