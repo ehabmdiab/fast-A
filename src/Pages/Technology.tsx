@@ -14,9 +14,6 @@ export default function TechnologyPage() {
         description="Our patent-pending screen recording technology teaches AI agents complex workflows instantly—train them in minutes, automate for life."
         buttons={[
           {
-            title: "Customize Workflow",
-          },
-          {
             title: "Start Free Trial",
             variant: "secondary-alt",
           },

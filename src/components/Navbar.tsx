@@ -1,13 +1,42 @@
 import { motion } from "framer-motion";
 import { useRelume } from "../hooks/useRelume";
 import { NavLink } from "react-router";
+import { cn } from "../lib/utils";
+import { useEffect, useState } from "react";
 
 export function Navbar() {
   const useActive = useRelume();
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleNavLinkClick = () => {
+    if (useActive.isMobileMenuOpen) {
+      useActive.toggleMobileMenu();
+    }
+  };
+
   return (
     <section
       id="relume"
-      className="flex w-full z-50 absolute items-center bg-background-primary lg:min-h-18 lg:px-[5%]"
+      className={cn(
+        "flex w-full z-50 items-center transition-all duration-300 lg:min-h-18 lg:px-[5%]",
+        scrolled || useActive.isMobileMenuOpen
+          ? "fixed top-0 bg-background-primary/95 backdrop-blur-sm shadow-md"
+          : "absolute bg-background-primary"
+      )}
     >
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
@@ -68,33 +97,44 @@ export function Navbar() {
           exit="close"
           animate={useActive.animateMobileMenu}
           transition={{ duration: 0.4 }}
-          className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+          className={cn(
+            "overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]",
+            useActive.isMobileMenuOpen
+              ? "bg-background-primary/95 backdrop-blur-sm"
+              : ""
+          )}
         >
           <NavLink
             to="/technology"
+            onClick={handleNavLinkClick}
             className="block py-3 !neutral-lightest text-md neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Platform
           </NavLink>
 
           <NavLink
+            to="/agents"
+            onClick={handleNavLinkClick}
+            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+          >
+            Agents
+          </NavLink>
+
+          <NavLink
             to="/about"
+            onClick={handleNavLinkClick}
             className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             About Us
           </NavLink>
           <NavLink
             to="/contact"
+            onClick={handleNavLinkClick}
             className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
           >
             Contact Us
           </NavLink>
-          <NavLink
-            to="/agents"
-            className="block py-3 text-md !neutral-lightest first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
-          >
-            Agents
-          </NavLink>
+
           {/* <NavLink
             to="/blog-post"
             className="block py-3 text-md first:pt-7 !neutral-lightest lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"

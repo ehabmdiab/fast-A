@@ -3,21 +3,21 @@ import { IndustryCard } from "../IndustryCard";
 const teamMembers = [
   {
     image: "/ahmed-CEO.png",
-    industry: "Mr. Ahmed Ramy",
+    industry: "Ahmed Ramy",
     tagline: "Chief Executive Officer",
     // description:
     //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     image: "/osama-CTO.png",
-    industry: "Mr. Ossama Aziz",
+    industry: "Ossama Aziz",
     tagline: "Chief Technology Officer",
     // description:
     //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     image: "/adham-CBO.png",
-    industry: "Mr. Adham Maghraby",
+    industry: "Adham Maghraby",
     tagline: "Chief Business Officer",
     // description:
     //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
@@ -26,7 +26,7 @@ const teamMembers = [
 
 export const LeadershipTeamSection = () => {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+    <section className="w-full bg-gradient-to-br from-[#0D0E15] via-[#0E121C] to-[#0E111B] flex flex-col items-center justify-center ">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mx-auto mb-12 max-w-[700px] text-center md:mb-18 lg:mb-20">

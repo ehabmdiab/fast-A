@@ -1,5 +1,4 @@
 import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
 import { Icons } from "../Icons";
 import { HashLinkButton } from "../HashLinkButton";
@@ -33,8 +32,15 @@ const features = [
 
 export function TechnologyFeaturesSection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
+      <div
+        className="absolute inset-0 bg-[url('/platform-sec-2.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="relume"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="flex flex-col items-start">
             <div className="mx-auto mb-12 max-w-[660px] md:mb-18 lg:mb-20">
@@ -70,8 +76,8 @@ export function TechnologyFeaturesSection() {
                 >
                   Learn More
                 </Button>
-              </HashLinkButton>{" "}
-              <HashLinkButton to="/contact#contact-form" asChild>
+              </HashLinkButton>
+              {/* <HashLinkButton to="/contact#contact-form" asChild>
                 <Button
                   title="Sign Up"
                   variant="link"
@@ -81,7 +87,7 @@ export function TechnologyFeaturesSection() {
                 >
                   Sign Up
                 </Button>
-              </HashLinkButton>
+              </HashLinkButton> */}
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ const featureGridData = {
 
 export function FeatureSection() {
   return (
-    <section className="bg-neutral-darkest w-full justify-center items-center flex-col flex">
+    <section className=" bg-gradient-to-br from-[#000003] via-[#000C14] to-[#0C141E] w-full justify-center items-center flex-col flex">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mb-12 grid grid-cols-1 gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">
@@ -44,9 +44,9 @@ export function FeatureSection() {
                 {featureGridData.sectionTitle}
               </h2>
             </div>
-            <div>
+            {/* <div>
               <p className="md:text-md">{featureGridData.sectionDescription}</p>
-            </div>
+            </div> */}
           </div>
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:grid-cols-4">
             {featureGridData.features.map((feature, index) => (

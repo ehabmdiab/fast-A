@@ -26,8 +26,15 @@ const industries = [
 
 export function BusinessSegmentsSection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
+      <div
+        className="absolute inset-0 bg-[url('/platform-sec-3.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="relume"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center md:mb-18 lg:mb-20">
             <h2 className="rb-5 mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">

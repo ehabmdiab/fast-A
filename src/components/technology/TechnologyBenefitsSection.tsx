@@ -4,8 +4,11 @@ import { HashLinkButton } from "../HashLinkButton";
 
 export const TechnologyBenefitsSection = () => {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className=" w-full  bg-gradient-to-br from-[#141E2B] via-[#0D1017] to-[#11191E]  flex flex-col items-center justify-center">
+      <div
+        id="relume"
+        className="w-full relative z-10 px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-16 lg:gap-16">
             <div>

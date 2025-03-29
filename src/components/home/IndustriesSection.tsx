@@ -27,8 +27,8 @@ const industryCards = [
 
 export function IndustriesSection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-gradient-to-br from-[#0D1A24] via-[#0C141D] via-[#0F1219] to-[#0D1623] flex flex-col items-center justify-center">
+      <div id="relume" className="  w-full px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
             <h2 className="rb-5 mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">

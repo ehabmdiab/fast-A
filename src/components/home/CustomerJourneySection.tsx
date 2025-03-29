@@ -27,8 +27,15 @@ const journeySteps = [
 
 export function CustomerJourneySection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
+      <div
+        className="absolute inset-0 bg-[url('/home-sec-3.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="relume"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="mb-12 md:mb-18 lg:mb-20">
             <div className="mx-auto max-w-lg text-center">

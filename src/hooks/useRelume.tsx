@@ -30,5 +30,6 @@ export const useRelume = () => {
     animateMobileMenuButtonSpan,
     animateDropdownMenu,
     animateDropdownMenuIcon,
+    isMobileMenuOpen,
   };
 };

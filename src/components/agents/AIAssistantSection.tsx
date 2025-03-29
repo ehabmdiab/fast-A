@@ -17,7 +17,7 @@ const assistantFeatures = [
 
 export const AIAssistantSection = () => {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+    <section className="w-full bg-gradient-to-br from-[#060718] via-[#07071A] to-[#0D1218] flex flex-col items-center justify-center ">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2 lg:gap-x-20">

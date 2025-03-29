@@ -2,12 +2,13 @@ import {
   BiLogoFacebookCircle,
   BiLogoInstagram,
   BiLogoLinkedinSquare,
-  BiLogoYoutube,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer id="relume" className="px-[5%] py-12 md:py-18 lg:py-20 bg-white">
       <div className="container">
@@ -40,27 +41,27 @@ export function Footer() {
             </li> */}
           </ul>
           <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end">
-            <a href="#">
+            <a href="https://www.facebook.com/FastAutomate" target="_blank">
               <BiLogoFacebookCircle className="size-6" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/fastautomate/" target="_blank">
               <BiLogoInstagram className="size-6" />
             </a>
-            <a href="#">
+            <a href="https://x.com/FastAutomate" target="_blank">
               <FaXTwitter className="size-6 p-0.5" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/fastautomate/"
+              target="_blank"
+            >
               <BiLogoLinkedinSquare className="size-6" />
-            </a>
-            <a href="#">
-              <BiLogoYoutube className="size-6" />
             </a>
           </div>
         </div>
         <div className="flex flex-col-reverse items-center justify-center justify-items-center pb-4 pt-6 text-sm md:flex-row md:gap-x-6 md:pb-0 md:pt-8">
           <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <p className="mt-8 text-black md:mt-0">
-              © 2024 FastAutomate. All rights reserved.
+              © {currentYear} FastAutomate. All rights reserved.
             </p>
           </ul>
         </div>

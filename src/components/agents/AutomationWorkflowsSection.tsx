@@ -1,7 +1,5 @@
-import { Button } from "@relume_io/relume-ui";
 import { InfoCard } from "../InfoCard";
 import { Icons } from "../Icons";
-import { HashLinkButton } from "../HashLinkButton";
 
 const workflows = [
   {
@@ -31,7 +29,7 @@ const workflows = [
 
 export function AutomationWorkflowsSection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+    <section className="w-full bg-gradient-to-br from-[#0D131A] via-[#0D121B] to-[#0D1620] flex flex-col items-center justify-center ">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="flex flex-col items-start">
@@ -65,7 +63,7 @@ export function AutomationWorkflowsSection() {
                 />
               ))}
             </div>
-            <div className="mt-12 flex w-full flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
+            {/* <div className="mt-12 flex w-full flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20">
               <HashLinkButton to="/contact#contact-form" asChild>
                 <Button
                   title="Deploy Your Agent"
@@ -75,7 +73,7 @@ export function AutomationWorkflowsSection() {
                   Deploy Your Agent
                 </Button>
               </HashLinkButton>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

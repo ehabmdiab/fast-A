@@ -1,6 +1,6 @@
 export const MissionSection = () => {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
+    <section className="w-full bg-gradient-to-br from-[#051721] via-[#000208] to-[#000208] flex flex-col items-center justify-center ">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="grid grid-cols-1 items-start justify-between gap-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20">

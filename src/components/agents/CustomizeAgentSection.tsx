@@ -1,10 +1,14 @@
-import { Button } from "@relume_io/relume-ui";
-import { HashLinkButton } from "../HashLinkButton";
-
 export const CustomizeAgentSection = () => {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
+      <div
+        className="absolute  inset-0 bg-[url('/agent-sec-3.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="relume"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20 h-full">
             <div>
@@ -24,7 +28,7 @@ export const CustomizeAgentSection = () => {
                 power of automation that adapts to your workflows.
               </p>
 
-              <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+              {/* <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
                 <HashLinkButton to="/contact#contact-form" asChild>
                   <Button
                     title="Create"
@@ -34,7 +38,7 @@ export const CustomizeAgentSection = () => {
                     Create
                   </Button>
                 </HashLinkButton>
-              </div>
+              </div> */}
             </div>
             <div className="h-full w-full  max-h-[600px] max-w-[600px]">
               <img

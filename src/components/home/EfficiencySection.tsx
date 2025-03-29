@@ -4,8 +4,15 @@ import { HashLinkButton } from "../HashLinkButton";
 
 export function EfficencySection() {
   return (
-    <section className="w-full bg-neutral-dark flex flex-col items-center justify-center ">
-      <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
+      <div
+        className="absolute  inset-0 bg-[url('/home-sec-2.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="relume"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
+      >
         <div className="container">
           <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
             <div>
