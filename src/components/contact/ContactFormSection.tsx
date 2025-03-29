@@ -8,27 +8,28 @@ const HUBSPOT_FORM_ID = "ee56ecf5-0a99-416b-99fe-4dfceef31ee3";
 const HUBSPOT_ENDPOINT = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`;
 
 // Field mapping for HubSpot
-const FIELD_MAPPING = {
+const FIELD_MAPPING: Record<string, string> = {
   name: "firstname",
   email: "email",
   message: "message",
+  title: "jobtitle",
+  company: "company",
+  website: "website",
+  mobile: "mobilephone",
 };
 
 export const ContactFormSection = () => {
-  // Form submission state
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
+  const [submitError, setSubmitError] = useState<string>("");
 
-  // Handle form submission
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
 
-    // Get form data
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Validate required fields
+    // Required fields
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
@@ -42,25 +43,23 @@ export const ContactFormSection = () => {
     setSubmitError("");
 
     try {
-      // Prepare HubSpot data
       const hubspotData = {
-        fields: [
-          { name: FIELD_MAPPING.name, value: name },
-          { name: FIELD_MAPPING.email, value: email },
-          { name: FIELD_MAPPING.message, value: message },
-        ],
+        fields: Object.entries(FIELD_MAPPING)
+          .map(([formField, hubspotField]) => {
+            const value = formData.get(formField);
+            return value ? { name: hubspotField, value } : null;
+          })
+          .filter(Boolean),
         context: {
           pageUri: window.location.href,
           pageName: document.title,
         },
       };
 
-      // Submit to HubSpot
       await axios.post(HUBSPOT_ENDPOINT, hubspotData, {
         headers: { "Content-Type": "application/json" },
       });
 
-      // Success handling
       setSubmitSuccess(true);
       form.reset();
     } catch (error) {
@@ -82,13 +81,13 @@ export const ContactFormSection = () => {
 
       <div
         id="relume"
-        className="relative z-10 justify-items-center w-full px-[5%] py-16 md:py-24 lg:py-28"
+        className="relative z-10 w-full px-[5%] py-16 md:py-24 lg:py-28"
       >
-        <div className="container grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
+        <div className="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
           <div>
             <img
               src="/customer-journey-blueprint.png"
-              alt="Relume placeholder image"
+              alt="Relume placeholder"
               className="size-full object-cover"
             />
           </div>
@@ -104,54 +103,46 @@ export const ContactFormSection = () => {
             </div>
 
             {submitSuccess ? (
-              <div className="p-4  bg-neutral-light-dark bg-opacity-20 rounded-md">
+              <div className="p-4 bg-neutral-light-dark bg-opacity-20 rounded-md">
                 <p className="text-white">
                   Thank you for your message! We'll get back to you soon.
                 </p>
               </div>
             ) : (
-              <form
-                id="contact-form"
-                className="grid grid-cols-1 gap-6"
-                onSubmit={handleSubmit}
-              >
+              <form className="grid grid-cols-1 gap-6" onSubmit={handleSubmit}>
                 <div className="grid w-full items-center">
-                  <Label htmlFor="name" className="mb-2">
-                    Name
-                  </Label>
+                  <Label htmlFor="name">Name *</Label>
                   <Input type="text" id="name" name="name" required />
                 </div>
                 <div className="grid w-full items-center">
-                  <Label htmlFor="email" className="mb-2">
-                    Email
-                  </Label>
+                  <Label htmlFor="email">Email *</Label>
                   <Input type="email" id="email" name="email" required />
                 </div>
                 <div className="grid w-full items-center">
-                  <Label htmlFor="message" className="mb-2">
-                    Message
-                  </Label>
+                  <Label htmlFor="message">Message *</Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Type your message..."
-                    className="min-h-[11.25rem] overflow-auto p-3"
                     required
+                    className="min-h-[11.25rem] p-3"
                   />
                 </div>
-                {/* <div className="mb-3 flex items-center space-x-2 text-sm md:mb-4"> */}
-                {/* <Checkbox
-                    className="bg-neutral-800"
-                    id="terms"
-                    // checked={acceptTerms}
-                    // onChange={(e) =>
-                    //   setAcceptTerms((e.target as HTMLInputElement).checked)
-                    // }
-                  />
-                  <Label htmlFor="terms" className="cursor-pointer">
-                    I accept the Terms
-                  </Label> */}
-                {/* </div> */}
+                <div className="grid w-full items-center">
+                  <Label htmlFor="title">Title</Label>
+                  <Input type="text" id="title" name="title" />
+                </div>
+                <div className="grid w-full items-center">
+                  <Label htmlFor="company">Company</Label>
+                  <Input type="text" id="company" name="company" />
+                </div>
+                <div className="grid w-full items-center">
+                  <Label htmlFor="website">Website</Label>
+                  <Input type="text" id="website" name="website" />
+                </div>
+                <div className="grid w-full items-center">
+                  <Label htmlFor="mobile">Mobile</Label>
+                  <Input type="number" id="mobile" name="mobile" />
+                </div>
 
                 {submitError && (
                   <div className="text-red-400 text-sm">{submitError}</div>
@@ -160,7 +151,6 @@ export const ContactFormSection = () => {
                 <div>
                   <Button
                     className="bg-neutral-800"
-                    title="Submit"
                     type="submit"
                     disabled={isSubmitting}
                   >
