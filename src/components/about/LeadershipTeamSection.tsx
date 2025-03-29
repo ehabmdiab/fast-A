@@ -1,5 +1,3 @@
-import { BiLogoLinkedinSquare, BiLogoDribbble } from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
 import { IndustryCard } from "../IndustryCard";
 
 const teamMembers = [

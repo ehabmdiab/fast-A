@@ -1,5 +1,3 @@
-import { Button } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
 import { Icons } from "../Icons";
 

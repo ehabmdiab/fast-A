@@ -1,11 +1,9 @@
-import { Button } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import { useRelume } from "../hooks/useRelume";
-import { NavLink, useNavigate } from "react-router";
+import { NavLink } from "react-router";
 
 export function Navbar() {
   const useActive = useRelume();
-  const navigate = useNavigate();
   return (
     <section
       id="relume"

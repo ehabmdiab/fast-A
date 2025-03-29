@@ -1,5 +1,4 @@
 import { Button } from "@relume_io/relume-ui";
-import { HashLink } from "react-router-hash-link";
 import { HashLinkButton } from "../HashLinkButton";
 
 export const AutomationCallToAction = () => {

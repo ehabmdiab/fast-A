@@ -2,7 +2,6 @@ import { Button } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import { InfoCard } from "../InfoCard";
 import { Icons } from "../Icons";
-import { HashLink } from "react-router-hash-link";
 import { HashLinkButton } from "../HashLinkButton";
 
 const features = [

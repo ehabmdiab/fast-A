@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 import HomePage from "../Pages/Home";
-import PricingPage from "../Pages/Pricing";
+// import PricingPage from "../Pages/Pricing";
 import Layout from "../components/Layout";
 import TechnologyPage from "../Pages/Technology";
 import ContactPage from "../Pages/Contact";

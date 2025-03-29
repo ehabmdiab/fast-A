@@ -3,7 +3,6 @@ import { CustomerJourneySection } from "../components/home/CustomerJourneySectio
 import { EfficencySection } from "../components/home/EfficiencySection";
 import { FeatureSection } from "../components/home/FeatureSection";
 import { IndustriesSection } from "../components/home/IndustriesSection";
-import { TestimonialSection } from "../components/home/TestimonialSection";
 
 export default function HomePage() {
   return (
