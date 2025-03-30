@@ -29,7 +29,7 @@ const workflows = [
 
 export function AutomationWorkflowsSection() {
   return (
-    <section className="w-full bg-gradient-to-br from-[#0D131A] via-[#0D121B] to-[#0D1620] flex flex-col items-center justify-center ">
+    <section className="w-full transform-gpu bg-[linear-gradient(to_bottom_right,#0D131A,#0D121B,#0D1620)] flex flex-col items-center justify-center">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="flex flex-col items-start">

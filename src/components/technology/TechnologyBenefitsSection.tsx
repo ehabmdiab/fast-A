@@ -4,7 +4,7 @@ import { HashLinkButton } from "../HashLinkButton";
 
 export const TechnologyBenefitsSection = () => {
   return (
-    <section className=" w-full  bg-gradient-to-br from-[#141E2B] via-[#0D1017] to-[#11191E]  flex flex-col items-center justify-center">
+    <section className="w-full transform-gpu bg-[linear-gradient(to_bottom_right,#141E2B,#0D1017,#11191E)] flex flex-col items-center justify-center">
       <div
         id="relume"
         className="w-full relative z-10 px-[5%] py-16 md:py-24 lg:py-28"

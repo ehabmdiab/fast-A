@@ -26,7 +26,7 @@ const teamMembers = [
 
 export const LeadershipTeamSection = () => {
   return (
-    <section className="w-full bg-gradient-to-br from-[#0D0E15] via-[#0E121C] to-[#0E111B] flex flex-col items-center justify-center ">
+    <section className="w-full transform-gpu bg-[linear-gradient(to_bottom_right,#0D0E15,#0E121C,#0E111B)] flex flex-col items-center justify-center">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mx-auto mb-12 max-w-[700px] text-center md:mb-18 lg:mb-20">

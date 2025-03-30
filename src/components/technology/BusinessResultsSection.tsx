@@ -30,7 +30,7 @@ const results = [
 
 export function BusinessResultsSection() {
   return (
-    <section className="bg-gradient-to-br from-[#0D131D] via-[#0D141E] to-[#0E151E] w-full flex flex-col items-center justify-center ">
+    <section className="transform-gpu bg-[linear-gradient(to_bottom_right,#0D131D,#0D141E,#0E151E)] w-full flex flex-col items-center justify-center">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mb-12 max-w-[750px] md:mb-18 lg:mb-20 w-full">

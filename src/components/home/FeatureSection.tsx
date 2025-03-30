@@ -34,7 +34,7 @@ const featureGridData = {
 
 export function FeatureSection() {
   return (
-    <section className=" bg-gradient-to-br from-[#000003] via-[#000C14] to-[#0C141E] w-full justify-center items-center flex-col flex">
+    <section className="transform-gpu bg-[linear-gradient(to_bottom_right,#000003,#000C14,#0C141E)] w-full justify-center items-center flex-col flex">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="mb-12 grid grid-cols-1 gap-5 md:mb-18 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:mb-20 lg:gap-x-20">

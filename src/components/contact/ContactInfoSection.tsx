@@ -2,7 +2,7 @@ import { BiEnvelope, BiMap } from "react-icons/bi";
 
 export const ContactInfoSection = () => {
   return (
-    <section className="w-full bg-gradient-to-br from-[#010308] via-[#010308] to-[#101D2B] flex flex-col items-center justify-center ">
+    <section className="w-full transform-gpu bg-[linear-gradient(to_bottom_right,#010308,#010308,#101D2B)] flex flex-col items-center justify-center">
       <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
         <div className="container">
           <div className="grid auto-cols-fr grid-cols-1 gap-x-28 gap-y-12 md:grid-cols-2 md:gap-y-16">
