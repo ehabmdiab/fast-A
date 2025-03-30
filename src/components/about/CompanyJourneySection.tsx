@@ -5,7 +5,7 @@ export const CompanyJourneySection = () => {
   return (
     <section className="relative w-full bg-neutral-dark flex flex-col items-center justify-center">
       <div
-        className="absolute  inset-0 bg-[url('/about-sec-1.webp')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+        className="absolute  inset-0 bg-[url('/about-sec-1.png')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
         aria-hidden="true"
       ></div>
 
